@@ -1,8 +1,8 @@
 .skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  /* max-width: 900px; */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  /* max-width: 1100px; */
   margin: auto; /* Centers horizontally */
   perspective: 1000px; /* For 3D Effect */
   justify-content: center; /* Centers grid items horizontally */
