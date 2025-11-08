@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky" 
+(scroll)="onWindowScroll();">
+<div class="container">
+	<!-- Logo container-->
+	<a class="logo" href="">Portfolio</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+	aria-label="Toggle navigation" (click)="toggleCollapsed()">
+	<span class="navbar-toggler-icon"></span>
+	</button><!--end button-->
+	<div class="navbar-collapse navigation" [ngClass]="{'collapse': collapsed}" id="navbarCollapse">
+			<ul id="navbar-navlist" class="navbar-nav ms-auto">
+					<li class="nav-item">
+							<a class="nav-link" (click)="onClickScroll('home')">Home</a>
+					</li><!--end nav item-->
+					<li class="nav-item">
+							<a class="nav-link"(click)="onClickScroll('about')">About</a>
+					</li><!--end nav item-->
+					<li class="nav-item">
+							<a class="nav-link"  (click)="onClickScroll('skills')">Skills</a>
+					</li><!--end nav item-->
+					<li class="nav-item">
+							<a class="nav-link"  (click)="onClickScroll('projects')">Projects</a>
+					</li><!--end nav item-->
+					<li class="nav-item">
+						<a class="nav-link" (click)="onClickScroll('education')">Education</a>
+				</li><!--end nav item-->
+					<li class="nav-item">
+							<a class="nav-link"  (click)="onClickScroll('contact')">Contact</a>
+					</li><!--end nav item-->
+			</ul>
+			<ul class="top-right text-end list-unstyled list-inline mb-0 mt-2 mt-sm-0 nav-social">
+					<li class="list-inline-item me-2"><a href="https://www.linkedin.com/in/bhavanaChukkala"><i class="bi bi-linkedin"></i></a></li>
+					<li class="list-inline-item me-2"><a href="https://github.com/Bhavana-18"><i class="bi bi-github"></i></a></li>
+			</ul>
+	</div> 
+</div>
+</nav>
+<div class="hero-area position-relative bg-half-120 pb-0" id="home">
+	<div class="container">	
+			<div class="row">
+				<div class="col-lg-7 col-md-7 align-items-center" style="display: flex;">
+					 <div class="title-heading mt-4 py--50">
+						<h1 class="heading text-black">I'm Bhavana Chukkala</h1>
+						<p class="pera-title text-light-muted">Curious to learn new new things and dedicated towards my work.</p>
+						<div class="hero-btn mt-4 pt-2">
+						<a   (click)="onClickScroll('contact')" class="btn btn-primary rounded me-2 mb-2">Contact Me</a>
+						<a (click)="openUrlInNewWindow('https://drive.google.com/file/d/1Sv519YPbbkhzs74rAcadUJ95kJCV2oh7/view?usp=sharing')" download ="Bhavana" class="btn btn-outline-primary rounded  mb-2">Download CV <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-download fea icon-sm"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+					  </div>
+					</div>
+			  </div>
+				<div class="col-lg-5 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+					<div class="home-image">
+							<img src="assets/images/Bhavs3.jpeg" alt="" class="img-fluid mx-auto position-relative" style="width:70%; height:70%">
+					</div>
+			  </div>
+		</div>
+		<!-- <div class="custom-header">
+			<h1>This is Home Component !</h1>
+		</div> -->
+	</div>
+</div>

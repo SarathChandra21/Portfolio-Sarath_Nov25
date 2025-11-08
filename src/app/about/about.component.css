@@ -1,0 +1,53 @@
+.text-primary {
+    color: #007bff !important;
+  }
+  
+ .card-body{
+  padding: 25px;
+ }
+  .text-light {
+    color: #f8f9fa !important;
+  }
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+  .text-black {
+    color: #161c2d !important;
+  }
+ 
+  
+  .text-light-muted {
+    color: #8492a6 !important;
+  }
+  
+  .title-heading .heading {
+    font-size: 57px;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+  .bor-bottom {
+    padding: 0px;
+    border: 0.5px dashed #d4dae1;
+  }
+  .content {
+    font-weight: 600;
+  }
+  .media-body .title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .about-details {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+            box-shadow: 0 0 3px rgba(60, 72, 88, 0.15) !important;
+    padding: 18px;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  /* #about{
+      padding-top: 5%;
+  } */

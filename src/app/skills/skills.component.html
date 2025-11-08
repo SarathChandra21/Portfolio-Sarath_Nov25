@@ -1,0 +1,12 @@
+<div class="skill-contains" id ="skills">
+<h1 class="title">My Skills</h1>
+
+<section class="skills" #skillsContainer>
+  <div class="card" *ngFor="let skill of skills">
+    <div class="glow"></div>
+    <img [src]="skill.icon" [alt]="skill.name">
+    <h3>{{ skill.name }}</h3>
+  </div>
+</section>
+
+</div>

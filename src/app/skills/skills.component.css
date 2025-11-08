@@ -1,0 +1,133 @@
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  /* max-width: 900px; */
+  margin: auto; /* Centers horizontally */
+  perspective: 1000px; /* For 3D Effect */
+  justify-content: center; /* Centers grid items horizontally */
+  align-items: center; /* Centers grid items vertically */
+  min-height: 60vh; /* Ensures it's centered vertically */
+}
+
+.skill-contains{
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+/* Title */
+.title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+/* Card Styles with Glassmorphism */
+.card {
+    width: 250px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent */
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+    transform-style: preserve-3d;
+    backdrop-filter: blur(20px) saturate(180%) brightness(110%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Glow Effect (Follows Cursor) */
+.glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 60%);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+}
+
+/* Skill Icon */
+.card img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.2s ease-out;
+    transform-style: preserve-3d;
+}
+
+/* Skill Title */
+.card h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover Effect */
+.card:hover {
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.25); /* Lighter Glass Effect */
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 30px;
+    margin: auto;
+    min-height: 60vh;
+    padding: 20px;
+  }
+  
+  /* Skill Card Styling */
+  .card {
+    /* flex: 1 1 calc(25% - 20px); 4 items per row on large screens */
+    width: 250px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2); /* Glass effect */
+    backdrop-filter: blur(10px); /* Blur for glass effect */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .skill-card {
+      flex: 1 1 calc(33.33% - 20px); /* 3 items per row */
+      max-width: calc(33.33% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skill-card {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-card {
+      flex: 1 1 calc(100% - 20px); /* 1 item per row */
+      max-width: calc(100% - 20px);
+    }
+  }
+  
